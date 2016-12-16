@@ -822,7 +822,7 @@ casa_find( CASACODE
 if( NOT PYTHON_FOUND )
 
   if ( NOT PYTHON_LIBNAME )
-    set( _names 2.7 2.6 2.5.2 2.5 )
+    set( _names 3.5m 3.4m 2.7 )
     # (The library named libpython.2.5.2.dylib seems to exist only in the CASA world.)
   else()
     set( _names ${PYTHON_LIBNAME} )
