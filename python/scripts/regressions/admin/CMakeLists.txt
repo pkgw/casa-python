@@ -18,33 +18,21 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-casa_add_python( tools tools_regressions_admin_python python/${PYTHONV}
-  publish_summary.py
-  runUnitTest.py
-  memTest.py
-  testbase.py
-  imageTest.py
-  visTest.py
-  locatescript.py
-  gprof2dot.py
-  profileplot.py
-  report.py
-  tableMaker.py
-  testwrapper.py
-  make_mmsdata.py
-  tw_func.py
-  tw_plotmem.py
-  tw_utils.py
-)
-
-install( PROGRAMS 
-         installer.pl
-         process_manager.pl
-         scheduler.pl
-         get_results.pl
-         runcasa_from_shell.sh
-         tests_list.txt
-         runUnitTest.py
-	 execute.py
-         make_mmsdata.py
-         DESTINATION python/${PYTHONV}/regressions/admin )
+##casa_add_python( tools tools_regressions_admin_python python/${PYTHONV}
+##  publish_summary.py
+##  runUnitTest.py
+##  memTest.py
+##  testbase.py
+##  imageTest.py
+##  visTest.py
+##  locatescript.py
+##  gprof2dot.py
+##  profileplot.py
+##  report.py
+##  tableMaker.py
+##  testwrapper.py
+##  make_mmsdata.py
+##  tw_func.py
+##  tw_plotmem.py
+##  tw_utils.py
+##)
