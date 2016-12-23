@@ -778,7 +778,7 @@ TPPlotter::thePlot( BasePlot &BP,
 static void initialize_numpy( ) {
       PyGILState_STATE gstate;
       gstate = PyGILState_Ensure();
-      import_array();
+      import_array1();
       PyGILState_Release(gstate);
 }
 
