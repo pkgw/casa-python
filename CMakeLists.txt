@@ -823,7 +823,6 @@ if( NOT PYTHON_FOUND )
 
   if ( NOT PYTHON_LIBNAME )
     set( _names 3.5m 3.4m 2.7 )
-    # (The library named libpython.2.5.2.dylib seems to exist only in the CASA world.)
   else()
     set( _names ${PYTHON_LIBNAME} )
   endif()
@@ -857,7 +856,7 @@ if( NOT PYTHON_LIBNAME )
   message( FATAL_ERROR "The variable PYTHON_LIBNAME is undefined. Most likely, CMake's cache is out of date and you need to redetect your PYTHON installation (\"cmake -U PYTHON*\")")
 endif()
 
-string( SUBSTRING ${PYTHON_LIBNAME} 0 3 PYTHONV )
+set( PYTHONV "${PYTHON_LIBNAME}" )
 string( REPLACE "." "" PV ${PYTHONV} )
 set( python_library python${PYTHON_LIBNAME} )
 
